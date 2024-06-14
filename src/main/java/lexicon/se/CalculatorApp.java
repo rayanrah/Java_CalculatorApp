@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class CalculatorApp {
     public static void main(String[] args) {
 
+
         // Declare variables
         int operator;
         double number1, number2;
