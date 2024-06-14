@@ -1,7 +1,5 @@
 package lexicon.se;
 
-// Make a simple calculation using the "Switch" case.
-
 import java.util.Scanner;
 
 public class calculatorApp {
