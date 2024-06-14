@@ -19,6 +19,7 @@ public class calculatorApp {
             System.out.println("2. Subtract: ");
             System.out.println("3. Multiple: ");
             System.out.println("4. Divide: ");
+            System.out.println("5. Exit:");
             System.out.println("Choose Operator: ");
 
             // Let the user to enter the operator and save their choice to the memory.
@@ -26,9 +27,13 @@ public class calculatorApp {
             operator = scanner.nextInt();
 
             // Check if the operator is valid before asking for numbers.
-            if (operator > 4 || operator < 1)
+
+            if (operator == 5) {
+                continueCalculation = false;
+                System.out.println("Exiting the calculator. Goodbye!");
+            } else if (operator > 5 || operator < 1) {
                 System.out.println("Entered numbered in not valid.");
-            else {
+            } else {
                 //Ask the user to enter the First number and store it to the" number1".
                 System.out.println("Enter First Number: ");
                 number1 = scanner.nextDouble();
