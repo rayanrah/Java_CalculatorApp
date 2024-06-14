@@ -4,7 +4,7 @@ package lexicon.se;
 
 import java.util.Scanner;
 
-public class calculatorApp {
+public class CalculatorApp {
     public static void main(String[] args) {
 
         // Declare variables
@@ -13,7 +13,6 @@ public class calculatorApp {
         boolean continueCalculation = true;
 
         do {
-
             // Declare the selector menu for users to choose.
             System.out.println("1. Add: ");
             System.out.println("2. Subtract: ");
@@ -34,40 +33,53 @@ public class calculatorApp {
             } else if (operator > 5 || operator < 1) {
                 System.out.println("Entered numbered in not valid.");
             } else {
-                //Ask the user to enter the First number and store it to the" number1".
-                System.out.println("Enter First Number: ");
-                number1 = scanner.nextDouble();
+                double result = getNumberPerformOperation(operator);
 
-                //Ask the user to enter the Second number and store it to the "number2".
-                System.out.println("Enter Second Number: ");
-                number2 = scanner.nextDouble();
-
-                // Calculate the result with Switch method. We add variable "result" to store the calculation.
-                double result = 0;
-                switch (operator) {
-
-                    case 1:
-                        result = number1 + number2;
-                        break;
-
-                    case 2:
-                        result = number1 - number2;
-                        break;
-
-                    case 3:
-                        result = number1 * number2;
-                        break;
-
-                    case 4:
-                        result = number1 / number2;
-                        break;
-                }
                 System.out.println("Result is :" + result);
             }// if else
 
         }  // Do while
         while (continueCalculation);
     } // Main
+
+
+    public static double getNumberPerformOperation(int op) {
+
+        Scanner scanner = new Scanner(System.in);
+        //Ask the user to enter the First number and store it to the" number1".
+        System.out.println("Enter First Number: ");
+        double number1 = scanner.nextDouble();
+
+        //Ask the user to enter the Second number and store it to the "number2".
+        System.out.println("Enter Second Number: ");
+        double number2 = scanner.nextDouble();
+
+        // Calculate the result with Switch method. We add variable "result" to store the calculation.
+
+        double result = 0;
+        switch (op) {
+
+            case 1:
+                result = number1 + number2;
+                break;
+
+            case 2:
+                result = number1 - number2;
+                break;
+
+            case 3:
+                result = number1 * number2;
+                break;
+
+            case 4:
+                result = number1 / number2;
+                break;
+        }
+
+        return result;
+    }
+
+
 }
 
 
