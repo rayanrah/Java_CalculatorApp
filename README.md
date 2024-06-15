@@ -1,13 +1,38 @@
-A simple calculation using the "Switch" case.
-This calculation would be able to Add, Subtract, Multiply, and Divide two numbers.
 
-Example of program function:
-1. Add
-2. Subtract
-3.Multiple
-4.Divide
+# Simple Calculator
 
-Choose Operator: 1
-Enter First Number: 10
-Enter Second Number: 20
-Result is: 30
+📝<strong>Program</strong>: Java
+
+📝<strong>Framework</strong>: Maven
+
+## About the project:
+
+* This is a simple calculator application written in Java.
+* It allows users to perform basic arithmetic operations using a menu-driven interface.
+* The operations supported include addition, subtraction, multiplication, and division. 
+* The program continues to prompt the user for operations until they choose to exit.
+
+## Features:
+
+* Addition: Adds two numbers.
+* Subtraction: Subtracts the second number from the first number.
+* Multiplication: Multiplies two numbers.
+* Division: Divides the first number by the second number.
+* Exit: Terminates the application.
+
+## How to Use:
+
+1. Run the program.
+2. Select an operation from the menu by entering the corresponding number:
+
+    - **1** for Addition
+    - **2** for Subtraction
+    - **3** for Multiplication
+    - **4** for Division 
+    - **5** to Exit
+
+3. Enter the first number.
+4. Enter the second number. 
+5. View the result. 
+6. Repeat until you choose to exit by selecting option **5**.
+
